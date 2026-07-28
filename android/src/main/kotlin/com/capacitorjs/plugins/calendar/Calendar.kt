@@ -40,7 +40,15 @@ class Calendar(private val context: Context) {
         values.put(Events.EVENT_TIMEZONE, TimeZone.getDefault().id)
         values.put(Events.DTSTART, startMs)
         optString(options, "location")?.let { values.put(Events.EVENT_LOCATION, it) }
-        optString(options, "notes")?.let { values.put(Events.DESCRIPTION, it) }
+        // Events has no dedicated URL field on Android, so append it to the notes.
+        val notes = optString(options, "notes")
+        val url = optString(options, "url")
+        val description = when {
+            url == null -> notes
+            notes == null -> url
+            else -> "$notes $url"
+        }
+        description?.let { values.put(Events.DESCRIPTION, it) }
         values.put(Events.ALL_DAY, if (options.optBoolean("isAllDay", false)) 1 else 0)
 
         val rrule = recurrenceRule(options.optJSONObject("recurrence"))

@@ -88,7 +88,15 @@ class CalendarPlugin : Plugin() {
             .putExtra(CalendarContract.EXTRA_EVENT_END_TIME, endMs)
             .putExtra(CalendarContract.EXTRA_EVENT_ALL_DAY, call.getBoolean("isAllDay") == true)
         call.getString("location")?.let { intent.putExtra(Events.EVENT_LOCATION, it) }
-        call.getString("notes")?.let { intent.putExtra(Events.DESCRIPTION, it) }
+        // Events has no dedicated URL field on Android, so append it to the notes.
+        val notes = call.getString("notes")
+        val url = call.getString("url")
+        val description = when {
+            url == null -> notes
+            notes == null -> url
+            else -> "$notes $url"
+        }
+        description?.let { intent.putExtra(Events.DESCRIPTION, it) }
 
         editInProgress = true
         try {
