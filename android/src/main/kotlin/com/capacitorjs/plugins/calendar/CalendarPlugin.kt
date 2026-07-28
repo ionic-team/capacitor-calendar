@@ -244,7 +244,7 @@ class CalendarPlugin : Plugin() {
 
     @PluginMethod
     fun openCalendar(call: PluginCall) {
-        val ms = call.getLong("date") ?: System.currentTimeMillis()
+        val ms = if (call.data.isNull("date")) System.currentTimeMillis() else call.getLong("date") ?: System.currentTimeMillis()
         val uri = ContentUris.appendId(
             CalendarContract.CONTENT_URI.buildUpon().appendPath("time"),
             ms
