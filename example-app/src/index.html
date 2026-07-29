@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="hydrated">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calendar Plugin Example</title>
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body { font-family: -apple-system, system-ui, sans-serif; margin: 1rem; }
+      button { display: block; width: 100%; padding: 0.9rem; margin: 0.4rem 0; font-size: 1rem; }
+      input { width: 100%; padding: 0.5rem; margin: 0.2rem 0 0.6rem; box-sizing: border-box; }
+      pre { background: #111; color: #0f0; padding: 0.75rem; border-radius: 6px;
+            white-space: pre-wrap; word-break: break-word; min-height: 6rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>@capacitor/calendar example</h1>
+
+      <button onclick="testCheckPermissions()">checkPermissions()</button>
+      <button onclick="testRequestPermissions()">requestPermissions()</button>
+
+      <label for="titleInput">event title:</label>
+      <input type="text" id="titleInput" value="Example Event" />
+      <button onclick="testCreateEvent()">createEvent(): 1h from now, 15 min reminder</button>
+      <button onclick="testCreateInteractively()">createEventInteractively()</button>
+      <button onclick="testFindEvents()">findEvents({ title })</button>
+      <button onclick="testModifyEvent()">modifyEvent(): retitle last created</button>
+      <button onclick="testDeleteEvent()">deleteEvent({ id: last created })</button>
+
+      <button onclick="testListCalendars()">listCalendars()</button>
+      <button onclick="testCreateCalendar()">createCalendar('ExampleCal')</button>
+      <button onclick="testDeleteCalendar()">deleteCalendar('ExampleCal')</button>
+      <button onclick="testOpenCalendar()">openCalendar()</button>
+
+      <pre id="out">Tap a method…</pre>
+    </main>
+
+    <script src="./js/example.js" type="module"></script>
+  </body>
+</html>
