@@ -1,6 +1,6 @@
 {
   "name": "@capacitor/calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create, find, modify and remove events in the device calendar.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

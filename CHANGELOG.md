@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ionic-team/capacitor-calendar/compare/v1.0.0...v1.0.1) (2026-08-19)
+
+
+### Bug Fixes
+
+* **android:** only apply kotlin-android plugin if not already applied ([#2](https://github.com/ionic-team/capacitor-calendar/issues/2)) ([71a4852](https://github.com/ionic-team/capacitor-calendar/commit/71a48520a3296f09bc2fa3355162a08a42afc85a))
+
 # 1.0.0 (2026-07-29)
 
 
