@@ -10,13 +10,13 @@ let package = Package(
             targets: ["CalendarPlugin"])
     ],
     dependencies: [
-        .package(url: "https://github.com/ionic-team/capacitor", exact: "9.0.0-alpha.7")
+        .package(url: "https://github.com/ionic-team/capacitor", from: "9.0.0-alpha.7")
     ],
     targets: [
         .target(
             name: "CalendarPlugin",
             dependencies: [
-                .product(name: "Capacitor", package: "capacitor"),
+                .product(name: "Capacitor", package: "capacitor")
             ],
             path: "ios/Sources/CalendarPlugin"),
         .testTarget(
