@@ -1,3 +1,15 @@
+# [2.0.0-next.1](https://github.com/ionic-team/capacitor-calendar/compare/v1.0.1...v2.0.0-next.1) (2026-10-13)
+
+
+### Features
+
+* Align plugin baselines with core ([#8](https://github.com/ionic-team/capacitor-calendar/issues/8)) ([5e8c937](https://github.com/ionic-team/capacitor-calendar/commit/5e8c937dd99902ef058dd301868d9fa046dae34a))
+
+
+### BREAKING CHANGES
+
+* Align plugin baselines with Capacitor 9
+
 ## [1.0.1](https://github.com/ionic-team/capacitor-calendar/compare/v1.0.0...v1.0.1) (2026-08-19)
 
 
