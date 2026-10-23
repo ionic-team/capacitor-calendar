@@ -1,3 +1,10 @@
+# [2.0.0-next.2](https://github.com/ionic-team/capacitor-calendar/compare/v2.0.0-next.1...v2.0.0-next.2) (2026-10-23)
+
+
+### Bug Fixes
+
+* remove "prepare" for NPM 12 ([#12](https://github.com/ionic-team/capacitor-calendar/issues/12)) ([b8e8f80](https://github.com/ionic-team/capacitor-calendar/commit/b8e8f803703b6f897f361b429ebdc5ba65d636c5))
+
 # [2.0.0-next.1](https://github.com/ionic-team/capacitor-calendar/compare/v1.0.1...v2.0.0-next.1) (2026-10-13)
 
 
