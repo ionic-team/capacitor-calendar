@@ -15,7 +15,8 @@
     "build-actions/",
     "dist/",
     "ios/Sources",
-    "ios/Tests"
+    "ios/Tests",
+    "android/proguard-rules.pro"
   ],
   "author": "OutSystems <support@outsystems.com>",
   "license": "MIT",
@@ -70,7 +71,7 @@
     "semantic-release": "^25.0.2"
   },
   "peerDependencies": {
-    "@capacitor/core": ">=9.0.0-alpha.7"
+    "@capacitor/core": ">=9.0.0-beta.0"
   },
   "prettier": "@ionic/prettier-config",
   "swiftlint": "@ionic/swiftlint-config",
