@@ -1,3 +1,10 @@
+# [2.0.0-next.3](https://github.com/ionic-team/capacitor-calendar/compare/v2.0.0-next.2...v2.0.0-next.3) (2026-11-20)
+
+
+### Bug Fixes
+
+* **android:** avoid implicit parent project property lookup deprecated in Gradle 9 ([#16](https://github.com/ionic-team/capacitor-calendar/issues/16)) ([8dfbaf0](https://github.com/ionic-team/capacitor-calendar/commit/8dfbaf0ec8818c63bdf33739c8b71c3d2ed07929))
+
 # [2.0.0-next.2](https://github.com/ionic-team/capacitor-calendar/compare/v2.0.0-next.1...v2.0.0-next.2) (2026-10-23)
 
 
